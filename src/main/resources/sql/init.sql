@@ -1,13 +1,15 @@
 drop  table student;
+
 CREATE TABLE STUDENT(
   id integer not null,
+  name char (4) not null,
   PRIMARY KEY (id)
 );
 
-INSERT INTO STUDENT(id) VALUES (1);
-INSERT INTO STUDENT(id) VALUES (4);
-INSERT INTO STUDENT(id) VALUES (5);
-INSERT INTO STUDENT(id) VALUES (6);
-INSERT INTO STUDENT(id) VALUES (7);
+INSERT INTO STUDENT(id, name) VALUES (1, 'x');
+INSERT INTO STUDENT(id, name) VALUES (4, 'a');
+INSERT INTO STUDENT(id, name) VALUES (5, 'a');
+INSERT INTO STUDENT(id, name) VALUES (6, 'a');
+INSERT INTO STUDENT(id, name) VALUES (7, 'a');
 
 SELECT * FROM STUDENT;

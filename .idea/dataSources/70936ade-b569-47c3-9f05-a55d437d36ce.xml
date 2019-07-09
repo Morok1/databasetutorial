@@ -83,8 +83,8 @@
     <schema id="19" parent="4" name="public">
       <ObjectId>2200</ObjectId>
       <Comment>standard public schema</Comment>
-      <IntrospectionTimestamp>2019-07-09.12:19:41.663</IntrospectionTimestamp>
-      <IntrospectionStateNumber>7214</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-07-09.12:30:00.289</IntrospectionTimestamp>
+      <IntrospectionStateNumber>7220</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -131,23 +131,30 @@
       <Type>index</Type>
     </access-method>
     <table id="26" parent="19" name="student">
-      <ObjectId>26344</ObjectId>
-      <StateNumber>7214</StateNumber>
+      <ObjectId>26364</ObjectId>
+      <StateNumber>7220</StateNumber>
     </table>
     <column id="27" parent="26" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>7214</StateNumber>
+      <StateNumber>7220</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="28" parent="26" name="student_pkey">
-      <ObjectId>26347</ObjectId>
+    <column id="28" parent="26" name="name">
+      <Position>2</Position>
+      <DataType>char(4)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>7220</StateNumber>
+      <TypeId>1042</TypeId>
+    </column>
+    <index id="29" parent="26" name="student_pkey">
+      <ObjectId>26367</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="29" parent="26" name="student_pkey">
-      <ObjectId>26348</ObjectId>
+    <key id="30" parent="26" name="student_pkey">
+      <ObjectId>26368</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>student_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
